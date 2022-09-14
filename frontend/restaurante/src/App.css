@@ -1,0 +1,84 @@
+.App {
+  background-color: #282c34; 
+  height: 100vh; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.AppButton{
+  z-index: 2;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  height: 5vh;
+  padding:10px;
+  border-radius: 10px;
+}
+.AppButton:hover{  
+  background-color: rgb(227, 198, 83);
+  cursor: pointer;
+}
+
+.Form{
+  background-color: rgba(255, 255, 255, 0.838);  
+  color:#282c34;
+  width: 50vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.Form select{
+  background-color: white;
+  color:#282c34;
+  width: 20vw;
+  height: 5vh;
+  margin: 20px;
+  z-index: 2;
+}
+
+.Result{
+  background-color: white;
+  color:#282c34;
+  width: 50vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+
+.BackgroundImage{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.AppHeader{
+  background-color: white;
+  z-index: 2;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  color:black;
+}
+
