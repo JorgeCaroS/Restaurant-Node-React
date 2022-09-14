@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Restaurant-React-Node
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Node App
 
-## Available Scripts
+REST API built with Node, Express, MYSQL
 
-In the project directory, you can run:
+## Requirements
 
-### `npm start`
+- Node.js 14 (LTS) or greater
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone Repo
+2. Locate Backend Folder
+3. Run command
 
-### `npm test`
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Setup a database and add .env variables in /database/config/sequelize.js then run migrations (`npx sequelize-cli db:migrate`)
 
-### `npm run build`
+5. Start server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm run dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+6. Use endpoints for create Restaurants, Styles and Meals
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+POST
+http://localhost:3000/api/meals/add
+```
+BODY
+{"name":"sushi", "restaurant_id":3}
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+POST
+http://localhost:3000/api/style/add
+```
+BODY
+{"name":"vista de la ciudad", "restaurant_id":3}
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+POST
+http://localhost:3000/api/restaurants/add
+```
+BODY
+{"name":"el mirador sushi"}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## React App
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone Repo
+2. Locate Frontend/restaurante Folder
+3. Run command
 
-### Code Splitting
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Run command
 
-### Analyzing the Bundle Size
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
